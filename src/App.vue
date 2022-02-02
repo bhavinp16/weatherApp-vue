@@ -1,6 +1,6 @@
 <template>
-	<div id="app">
-		<router-view />
+	<div :class="darkMode ? 'appDark' : 'app'" id="app">
+		<router-view @dark="darkMode = !darkMode" />
 	</div>
 </template>
 
