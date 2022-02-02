@@ -1,27 +1,45 @@
 <template>
 	<div id="app">
-		<HelloWorld msg="Weather App" />
+		<router-view />
 	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import { themeConfig } from './EventBus';
 
 export default {
 	name: 'App',
-	components: {
-		HelloWorld,
+	data() {
+		return {
+			darkMode: false,
+		};
+	},
+
+	mounted() {
+		themeConfig.$on('dark', (data) => {
+			this.darkMode = data;
+		});
 	},
 };
 </script>
 
 <style>
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
+@import './assets/css/main.css';
+.app {
+	min-height: 100vh;
+	height: 100%;
+	background-image: url('./assets/bg.png') !important;
+	background-size: cover;
+
+	color: white !important;
+}
+
+.appDark {
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	background-image: url('./assets/bg-dark.png') !important;
+	background-size: cover;
+	color: white !important;
 }
 </style>
