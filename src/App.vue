@@ -6,9 +6,7 @@
 
 <script>
 import { themeConfig } from './EventBus';
-
 export default {
-	name: 'App',
 	data() {
 		return {
 			darkMode: false,
@@ -22,7 +20,6 @@ export default {
 	},
 };
 </script>
-
 <style>
 @import './assets/css/main.css';
 .app {
