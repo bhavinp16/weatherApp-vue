@@ -1,5 +1,6 @@
 {
-	"name": "weather_app_vue",
+	"name": "weatherapp-vue",
+	"homepage": "https://bhavinp16.github.io/weatherApp-vue/",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
