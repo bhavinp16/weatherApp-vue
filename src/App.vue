@@ -25,9 +25,8 @@ export default {
 .app {
 	min-height: 100vh;
 	height: 100%;
-	background-image: url('./assets/bg.png') !important;
+	background-image: url('./assets/Tropical-day.gif') !important;
 	background-size: cover;
-
 	color: white !important;
 }
 
@@ -35,7 +34,7 @@ export default {
 	width: 100%;
 	min-height: 100vh;
 	height: 100%;
-	background-image: url('./assets/bg-dark.png') !important;
+	background-image: url('./assets/Tropical-night.gif') !important;
 	background-size: cover;
 	color: white !important;
 }

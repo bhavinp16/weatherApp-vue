@@ -23,7 +23,9 @@
 					>type to search for weather..</template
 				>
 				<template slot="option" slot-scope="option">
-					<div class="d-center">{{ option.name }}</div>
+					<div v-bind:key="option.name" class="d-center">
+						{{ option.name }}
+					</div>
 				</template>
 				<template slot="selected-option" slot-scope="option">
 					<div class="selected d-center">
@@ -158,14 +160,14 @@ export default {
 		},
 
 		resetapp() {
-			this.$emit('seven', []);
-			this.$emit('daily', []);
-			this.$emit('showCards');
+			// this.$emit('seven', []);
+			// this.$emit('daily', []);
+			// this.$emit('showCards');
 
-			this.selectedCity = '';
-			this.cities = [];
-			this.lat = '';
-			this.lon = '';
+			// this.selectedCity = '';
+			// this.cities = [];
+			// this.lat = '';
+			// this.lon = '';
 
 			//bruteforced
 			this.$router.go(0);
@@ -182,13 +184,13 @@ export default {
 	border-radius: 0;
 	width: 100%;
 	height: 50px;
-	color: black;
+	color: rgba(0, 0, 0, 0.699);
 }
 
 .dark .vs__search::placeholder,
 .dark .vs__dropdown-toggle,
 .dark .vs__dropdown-menu {
-	background: #72abdc;
+	background: #303030;
 	color: white !important;
 	font-weight: 500;
 }

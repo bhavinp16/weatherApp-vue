@@ -20,7 +20,6 @@
 							width="220px"
 							alt
 						/>
-
 						<p>{{ parseInt(daily.main.temp) }}°</p>
 					</div>
 

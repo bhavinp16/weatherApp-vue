@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         dark: {
-            backgroundColor: "#72ABDC",
+            backgroundColor: "#303030",
             border: "none",
             color: "white"
         }
